@@ -8,10 +8,10 @@
     "lint:check": "eslint src/**/*.ts",
     "lint:fix": "eslint src/**/*.ts --fix",
     "prettier:check": "prettier --check src/**/*.{ts,js,json,css,md}",
-    "prettier-fix": "prettier --write src/**/*.{ts,js,json,css,md}",
-    "lint-prettier": "npm run lint:check && npm run prettier:check",
+    "prettier:fix": "prettier --write src/**/*.{ts,js,json,css,md}",
+    "lint-prettier": "npm run lint:fix && npm run prettier:fix",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky && husky install"
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "sabbir chowdhury",
@@ -35,7 +35,7 @@
     "eslint": "^9.9.0",
     "eslint-config-prettier": "^9.1.0",
     "globals": "^15.9.0",
-    "husky": "^8.0.0",
+    "husky": "^8.0.3",
     "prettier": "^3.3.3",
     "typescript-eslint": "^8.1.0"
   }
