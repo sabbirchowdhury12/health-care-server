@@ -16,7 +16,7 @@
   "keywords": [],
   "author": "sabbir chowdhury",
   "lint-staged": {
-    "src/**/*.ts": "npm run lint-prettier"
+    "*.ts": "npm run lint-prettier"
   },
   "license": "ISC",
   "dependencies": {
