@@ -1,12 +1,11 @@
 import { Router } from 'express'
 
-import { authRoutes } from '../modules/auth/user.route'
+import { authRoutes } from '../modules/auth/auth.route'
+import { profileRoutes } from '../modules/profile/route'
 
 const router = Router()
 
 router.use('/auth', authRoutes)
-router.get('/auth', async (req, res) => {
-  res.send('hi')
-})
+router.use('/profile', profileRoutes)
 
 export default router
